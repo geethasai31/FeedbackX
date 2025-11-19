@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBIET FeedbackX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header with full logo background -->
+<header class="header"></header>
+
+<!-- Portal Title -->
+<div class="portal-title">
+    <h1>JBIET FeedbackX</h1>
+</div>
+
+<!-- Messages Section -->
+<section class="messages">
+    <div class="message">
+        <img src="seceratary.webp" class="person-photo">
+        <h3>Secretary's Message</h3>
+        <p>Your honest feedback is valuable.As Secretary of the Institute, I encourage you to share your valuable insights through our feedback portal. Your honest input helps us improve our processes and supports the college’s commitment to excellence.
+
+Thank you for your continued cooperation</p>
+    </div>
+
+    <div class="message">
+        <img src="director.jpg" class="person-photo">
+        <h3>Director's Message</h3>
+        <p>We assure your feedback is anonymous.Your expertise shapes the future of our institute, and your feedback is vital for continuous improvement. Please take a moment to share your insights through the faculty‑feedback portal—your honest input helps us enhance teaching, research, and support services.
+
+Thank you for your dedication and for partnering with us to uphold excellence.
+</p>
+    </div>
+
+    <div class="message">
+        <img src="principal.jpg" class="person-photo">
+        <h3>Principal's Message</h3>
+        <p>Your inputs help us improve education standards.Your insights are essential for helping our faculty enhance teaching and learning. Please take a few minutes to complete the faculty‑feedback survey on the portal—your honest opinions make a real difference.
+
+Thank you for contributing to the continued excellence of our college.</p>
+    </div>
+</section>
+
+<!-- Student Feedback Form -->
+<section class="feedback-form">
+    <h2>Select Branch, Year & Section</h2>
+
+    <div class="selection">
+        <label>Branch:</label>
+        <select id="branch">
+            <option value="">Select Branch</option>
+            <option value="CSE">CSE</option>
+            <option value="CSE">ECE</option>
+            <option value="CSE">EEE</option>
+            <option value="CSE">MECH</option>
+            <option value="CSE">CIV</option>
+            <option value="CSE">AIML</option>
+            <option value="CSE">CSD</option>
+        </select>
+
+        <label>Year:</label>
+        <select id="year">
+            <option value="">Select Year</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+        </select>
+
+        <label>Section:</label>
+        <select id="section">
+            <option value="">Select Section</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+    </div>
+
+    <button id="loadFaculty">Load Faculty Feedback Forms</button>
+</section>
+
+<!-- Dynamic feedback forms -->
+<section id="facultyFeedbacks"></section>
+
+<br><br>
+
+<!-- Admin Panel -->
+<section class="admin-section">
+    <h2>Admin Panel</h2>
+
+    <div class="admin-login">
+        <label>Enter Admin Password:</label>
+        <input type="password" id="adminPassword" placeholder="Password">
+        <button id="adminLoginBtn">Login</button>
+    </div>
+
+    <div class="admin-view" id="adminView" style="display:none;">
+        <h3>View Feedback</h3>
+
+        <div class="selection">
+            <label>Branch:</label>
+            <select id="adminBranch">
+                <option value="">Select Branch</option>
+                <option value="CSE">CSE</option>
+            </select>
+
+            <label>Year:</label>
+            <select id="adminYear">
+                <option value="">Select Year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+
+            <label>Section:</label>
+            <select id="adminSection">
+                <option value="">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+
+            <button id="viewFeedbackBtn">Open Report</button>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
